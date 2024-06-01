@@ -6,14 +6,11 @@ import exceptions.*;
 public class AppBanco {
 
 	public static void main(String[] args) {
-		Banco itau = null;
 		try {
-			itau = Banco.criarBanco(341, "ITAU UNIBANCO S.A.", "Itaú", "60.701.190/0001-04");
+			Banco itau = Banco.criarBanco(341, "ITAU UNIBANCO S.A.", "Itaú", "60.701.190/0001-04");
+			itau.exibirInformacoesBanco();
 		} catch (CNPJInvalidoException e) {
 			System.out.println(e.getMessage());
-		}
-		if (itau != null) {
-			itau.exibirInformacoesBanco();
 		}
 		Cliente ana = new Cliente("Ana Christina de Oliveira");
 		ana.setCpf("899.071.005-78");
