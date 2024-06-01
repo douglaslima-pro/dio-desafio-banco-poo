@@ -15,7 +15,7 @@ public abstract class Conta implements Comparable<Conta> {
 
 	public Conta(Cliente cliente) {
 		this.agencia = AGENCIA_PADRAO;
-		this.numero = SEQUENCIAL++;
+		this.numero = ++SEQUENCIAL;
 		this.titular = cliente;
 	}
 

@@ -22,8 +22,6 @@ public class AppBanco {
 		Conta ccAna = new ContaCorrente(ana);
 		ccAna.exibirInformacoesConta();
 		ccAna.depositar(1300);
-		ccAna.exibirInformacoesConta();
 		ccAna.sacar(150);
-		ccAna.exibirInformacoesConta();
 	}
 }
